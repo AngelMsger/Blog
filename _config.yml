@@ -1,0 +1,98 @@
+# Hexo Configuration
+
+# Site
+title: 齐浩天的博客
+subtitle: 一本来自流浪猫的诗集
+description: 个人技术博客与随笔
+keywords: 博客 编程 算法 深度学习 后端 爬虫 运维 数据库
+author: Vista Chyi
+language: zh-CN
+timezone: Asia/Shanghai
+
+# URL
+url: https://blog.angelmsger.com
+root: /
+permalink: :title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: false
+  line_number: true
+  auto_detect: false
+  tab_replace:
+  
+# Home page setting
+index_generator:
+  path: ''
+  per_page: 12
+  order_by: -date
+  
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+per_page: 12
+pagination_dir: page
+
+# Extensions
+# Theme
+theme: material
+
+# Plugins
+feed:
+  type: atom
+  path: atom.xml
+  limit: 32
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+
+live2d:
+  enable: true
+  scriptFrom: local
+  model:
+    use: live2d-widget-model-miku
+  display:
+    position: right
+    width: 150
+    height: 300
+    vOffset: -100
+  mobile:
+    show: false
+  react:
+    opacityDefault: 1
+
+# Deployment
+deploy:
+  type: rsync
+  host: angelmsger.com
+  user: root
+  root: /data/wwwroot/blog.angelmsger.com

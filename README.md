@@ -1,9 +1,11 @@
 # Blog
 Source of [My Blog](https://blog.angelmsger.com).
+
+[![Build Status](https://travis-ci.org/AngelMsger/Blog.svg?branch=master)](https://travis-ci.org/AngelMsger/Blog)
 ---
 
 ## Overview
-![AngelMsger](themes/material/source/img/logo.png)
+![AngelMsger](https://blog.angelmsger.com/img/logo.png)
 
 Source File of My Blog Including Coding Post & Essay. This Repo is Just Used to Backup.
 

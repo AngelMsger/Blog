@@ -103,3 +103,4 @@ Thumbs.db
 db.json
 public/
 .deploy*/
+_config.yml

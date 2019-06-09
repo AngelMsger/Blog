@@ -11,7 +11,7 @@ categories:
 - Database
 thumbnail: "/images/说说MySQL存储引擎，索引及基本优化策略.jpg"
 ---
-本文讨论一些听起来比增删改查更高级的内容，也许是迈向MySQL高可用(HA)的第一步。
+本文讨论一些听起来比增删改查更高级的内容，也许是迈进MySQL大门的第一步。
 
 # 存储引擎
 与Oracle, SQL Server这些数据库不同，MySQL提供了多种存储引擎。什么是存储引擎？存储引擎其实就是一套对于数据如何存储，查询，更新，建立索引等接口的实现。不同存储引擎特性有所不同，我们根据需要进行选择，比如包含ETL操作的[OLTP](https://en.wikipedia.org/wiki/Online_analytical_processing)(联机交易处理

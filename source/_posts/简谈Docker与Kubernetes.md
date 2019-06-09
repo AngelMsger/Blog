@@ -27,6 +27,7 @@ COPY . /app
 RUN pip install -r requirements.txt
 CMD python app.py
 {% endcodeblock %}
+
 ## Storage Driver
 Linux中提供一种名为UnionFS的机制实现多个文件系统联合挂载至同一挂载点，而Dockerd在构建镜像时利用此特性将多个可复用的层合并。UnionFS有多种实现方案，也即Docker文档中提到的存储驱动。根据Docker版本，文件系统及Linux发行版本及内核版本等因素的不同，Docker会采用不同的存储驱动。在早期Ubuntu中使用AUFS作为默认存储驱动，在CentOS中为devicemapper，在新版Ubuntu及Archlinux则为**overlay2**，同时overlay2也是目前Docker推荐采用的存储驱动。
 
@@ -71,7 +72,7 @@ Pod拥有自己独立的生命周期，当Pod由于一些原因意外结束，K8
 {% asset_img "滚动更新_3.svg" %}
 
 # 总结
-借助Docker，我们将环境连同项目共同纳入版本控制。借助K8S，我们能够轻松的管理集群上的服务，甚至基于K8S提供的[RESTful API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.9/)与现有持续集成系统结合，实现从代码更新，到进入测试环境，到灰度发布，最后到全量更新的自动化。容器化与容器编排工具使运维工作更加安全高效，在未来势必有很大的发展前景。
+借助Docker，我们将环境连同项目共同纳入版本控制。借助Kubernetes，我们能够轻松的管理集群上的服务，甚至基于Kubernetes提供的[RESTful API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.9/)与现有持续集成系统结合，实现从代码更新，到进入测试环境，到灰度发布，最后到全量更新的自动化。容器化与容器编排工具使运维工作更加安全高效，在未来势必有很大的发展前景。
 
 # 参考资料
 1. [Docker Documentation](https://docs.docker.com/)

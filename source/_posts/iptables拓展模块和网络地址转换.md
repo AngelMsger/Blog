@@ -1,5 +1,5 @@
 ---
-title: iptables拓展模块的网络地址转换
+title: iptables拓展模块和网络地址转换
 date: 2018-02-22 10:45:15
 tags:
 - iptables

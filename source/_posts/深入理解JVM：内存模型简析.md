@@ -7,7 +7,8 @@ tags:
 - Java
 categories:
 - Java & JVM
-thumbnail: "/images/深入理解JVM：内存模型简析.jpg"
+thumbnail: "/images/banner/深入理解JVM：内存模型简析.jpg"
+typora-root-url: ../../source/
 ---
 # 概述
 最近在学习JVM，简单总结一下学习成果，帮助我们了解Java代码执行背后的本质。我的主要参考资料是周志明老师的《深入理解Java虚拟机(第二版)》。目前(JDK 9)默认使用的JVM是HotSpot VM，也是我接下来的文章中主要描述的JVM。

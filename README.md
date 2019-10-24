@@ -9,3 +9,4 @@ Source File of My Blog Including Coding Post & Essay. This Repo is Just Used to 
 
 ## Changelogs
 2018/10/27 - Init Repo.
+2019/10/24 - Refacor Repo, Update Hexo to 4, Replace Vultr by [Qiniu](https://portal.qiniu.com/signup?code=1hdqpq4rxvmmq).

@@ -11,8 +11,6 @@ thumbnail: "/images/banner/流计算引擎初探 - Apache Flink.jpg"
 typora-root-url: ../../source/
 ---
 
-# 概述
-
 [Flink](https://flink.apache.org)是一个针对有状态的，有界或无界数据的流计算引擎，同类产品还包括[Storm](http://storm.apache.org)和[Spark Structured Streaming](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html)。Flink遵循Kappa架构，同时支持在线流计算和离线批处理，并提供内存级别IO速度和理论上无限制的横向扩展性。
 
 ![flink-home-graphic](/images/%E6%B5%81%E8%AE%A1%E7%AE%97%E5%BC%95%E6%93%8E%E5%88%9D%E6%8E%A2%20-%20Apache%20Flink/flink-home-graphic.png)

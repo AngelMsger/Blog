@@ -11,8 +11,6 @@ thumbnail: "/images/banner/Spark的流计算方案 - Sturctured Streaming.jpg"
 typora-root-url: ../../source/
 ---
 
-# 概述
-
 **Spark**是一个我们比较熟悉的分布式计算引擎了，本身没有特定目标限制，从数据清洗，转换，机器学习到图计算都提供不同程度的支持，相较于其诞生之初的主要对手**Hadoop MapReduce**而言有更高层次的Api封装以及内存级别的速度。在简道云中主要承担ETL相关的计算任务。
 
 本文的主要目的在于研究其流计算解决方案Structured Streaming，但也总结了作为基础的Spark核心概念。

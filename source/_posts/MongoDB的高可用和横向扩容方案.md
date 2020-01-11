@@ -9,7 +9,7 @@ tags:
 - Optimization
 categories:
 - Database
-thumbnail: "/images/banner/MongoDB的高可用和横向扩容方案"
+thumbnail: "/images/banner/MongoDB的高可用和横向扩容方案.jpg"
 typora-root-url: ../../source/
 ---
 

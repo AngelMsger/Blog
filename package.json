@@ -1,6 +1,11 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "angelmsger-blog",
+  "version": "1.0.0",
+  "author": {
+    "name": "AngelMsger",
+    "email": "i@angelmsger.com",
+    "url": "https://blog.angelmsger.com"
+  },
   "private": true,
   "scripts": {
     "build": "hexo generate",
@@ -22,7 +27,6 @@
     "hexo-helper-live2d": "^3.1.1",
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-marked": "^2.0.0",
-    "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
     "live2d-widget-model-miku": "^1.0.5"
   }

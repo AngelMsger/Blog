@@ -29,5 +29,11 @@
     "hexo-renderer-marked": "^2.0.0",
     "hexo-server": "^1.0.0",
     "live2d-widget-model-miku": "^1.0.5"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-uglify": "^3.0.2"
   }
 }

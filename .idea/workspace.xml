@@ -17,7 +17,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/themes/material" />
   </component>
   <component name="ProjectId" id="1WEuR3DZGY1woSzNqKJ1G2YUFBQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -62,6 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1578727063658</updated>
       <workItem from="1578727065203" duration="7554000" />
+      <workItem from="1579672195056" duration="661000" />
     </task>
     <servers />
   </component>
@@ -73,5 +74,9 @@
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="221" y="72" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1578728842705" />
+    <state x="368" y="176" width="683" height="486" key="find.popup" timestamp="1579672363663">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="368" y="176" width="683" height="486" key="find.popup/0.23.1440.821@0.23.1440.821" timestamp="1579672363663" />
   </component>
 </project>

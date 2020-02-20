@@ -29,7 +29,7 @@ thumbnail: "/images/关于.jpg"
 我本人不是画师，画廊内的作品主要转载自[Pixsiv](https://www.pixiv.net/)，[Bilibili](https://www.bilibili.com)等平台。
 
 # Contact - 联系
-- Email：[i@AngelMsger.Com](mailto: i@angelmsger.com)
+- Email：[i@AngelMsger.Com](mailto:i@angelmsger.com)
 
 - 匿名提问箱：[Vista Chyi](https://peing.net/zh-CN/angelmsger)
 

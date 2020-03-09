@@ -1,5 +1,5 @@
 ---
-title: 部署Redis Sentinel
+title: 部署 Redis Sentinel
 date: 2019-08-08 22:37:43
 tags:
 - Redis

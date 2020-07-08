@@ -98,7 +98,7 @@ db.shards.find({ tags: 'US' });
 
 # Balancer
 
-Balancer是MongoDB的一个运行在Config Server的Primary节点上(自MongoDB 3.4版本起)的后台进程，它监控每个分片上Chunk数量，并在某个分片上Chunk数量达到阈值进行迁移，。迁移过程对于应用是透明的，但由于迁移过程会占用相应节点的CPU和带宽资源，因此对分片集有一定程度的性能影响，并且对运维操作存在一些限制。
+Balancer是MongoDB的一个运行在Config Server的Primary节点上(自MongoDB 3.4版本起)的后台进程，它监控每个分片上Chunk数量，并在某个分片上Chunk数量达到阈值进行迁移。迁移过程对于应用是透明的，但由于迁移过程会占用相应节点的CPU和带宽资源，因此对分片集有一定程度的性能影响，并且对运维操作存在一些限制。
 
 当某一分片上的Chunk数量过多，超过一定阈值时，**均衡器**(Balancer)会自动进行Chunk在Shard间的迁移，尝试在一定约束下(如前文提到的Zone)使各个Shard上Chunk的数量保持均衡。均衡器对待自动和手动拆分产生的新Chunk是一致的，在块拆分行为影响到后续插入操作时倾向于将新产生的Chunk立即迁移到其他分片上。
 
@@ -148,7 +148,7 @@ db.settings.updateOne(
   { $unset: { activeWindow: "" } },
 );
 
-// 如果需要进行备份，需要保证以下状态为 tue
+// 如果需要进行备份，需要保证以下状态为 true
 !sh.getBalancerState() && !sh.isBalancerRunning();
 
 // 关闭指定集合上的迁移

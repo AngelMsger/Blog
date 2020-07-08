@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ffecb6c9-ea44-4aea-9c7c-8943c95b6d74" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/深入MongoDB分片集-块，区和均衡器.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/深入MongoDB分片集-块，区和均衡器.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,13 +18,12 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/themes/material" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WEuR3DZGY1woSzNqKJ1G2YUFBQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -35,21 +35,9 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v13.8.0/bin/node" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v14.4.0/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -65,25 +53,17 @@
       <workItem from="1579672195056" duration="762000" />
       <workItem from="1582183664774" duration="338000" />
       <workItem from="1582252312205" duration="3000" />
+      <workItem from="1592271197980" duration="2054000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="221" y="54" key="SettingsEditor" timestamp="1582183711352">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="789" y="328" key="SettingsEditor" timestamp="1592271713056">
+      <screen x="0" y="23" width="2560" height="1333" />
     </state>
-    <state x="221" y="54" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1582183711352" />
-    <state x="221" y="72" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1578728842705" />
-    <state x="368" y="176" width="683" height="486" key="find.popup" timestamp="1579672363663">
-      <screen x="0" y="23" width="1440" height="821" />
-    </state>
-    <state x="368" y="176" width="683" height="486" key="find.popup/0.23.1440.821@0.23.1440.821" timestamp="1579672363663" />
-    <state x="444" y="230" key="jetbrains.nodejs.interpreters-dialog" timestamp="1582183686592">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="444" y="230" key="jetbrains.nodejs.interpreters-dialog/0.0.1440.900@0.0.1440.900" timestamp="1582183686592" />
+    <state x="789" y="328" key="SettingsEditor/-1440.417.1440.877/0.23.2560.1333@0.23.2560.1333" timestamp="1592271713056" />
   </component>
 </project>

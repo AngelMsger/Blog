@@ -1,5 +1,5 @@
 ---
-title: 探索Node.js原理：一
+title: 探索Node.js原理
 date: 2018-07-23 23:40:16
 tags:
 - Node.js
@@ -8,7 +8,7 @@ tags:
 - LibUV
 categories:
 - JavaScript
-thumbnail: "/images/banner/探索Node.js原理：一.jpg"
+thumbnail: "/images/banner/探索Node.js原理.jpg"
 typora-root-url: ../../source/
 ---
 最近因为工作的原因学习了Node.js, 我之前接触JavaScript相对比较少, 所以这段时间恶补了不少东西, 最近读到了[JSBlog](https://jsblog.insiderattack.net)中关于**Event Loop**机制和Node.js原理的系列文章, 实在是很不错. 我把它翻译并整理了一下以便分享给更多人.
@@ -21,7 +21,7 @@ Node.js与其他服务端开发平台最大的不同在于其处理I/O的方式.
 
 Node.js工作在事件驱动模型之上, 这个模型包含一个事件分发器和一个事件队列, 这种模型也被称为[反应器模式](https://www.wikiwand.com/en/Reactor_pattern)(Reactor Pattern). 通俗的说, 当I/O请求到来时, 事件分发器(Event Demultiplexer)将其分发至指定设备去执行, 此时调用者并非阻塞等待操作结果, 而是继续执行队列中的其他任务. 当I/O操作执行完毕后, 事件分发器将此次I/O操作的结果及对应的回调函数加入事件队列, 直至调用者处理至此事件并执行回调函数. 这是一个半无限循环, Node.js的执行器会轮询事件队列, 直至队列中没有等待执行的回调并且没有其他未完成的I/O操作. 此过程的简图可以表示为:
 
-![基础模型](/images/%E6%8E%A2%E7%B4%A2Node-js%E5%8E%9F%E7%90%86%EF%BC%9A%E4%B8%80/%E5%9F%BA%E7%A1%80%E6%A8%A1%E5%9E%8B.jpg)
+![基础模型](/images/%E6%8E%A2%E7%B4%A2Node-js%E5%8E%9F%E7%90%86/%E5%9F%BA%E7%A1%80%E6%A8%A1%E5%9E%8B.jpg)
 
 网上很多文章对Node.js的执行模型探索到此为止, 但实际上这只是一个非常简化的模型, 很多时候甚至无法帮助我们理解一段程序, 比如:
 
@@ -69,7 +69,7 @@ set immediate2
 
 实际上Node.js中的时间队列并非只有一个简单的队列, I/O事件也并非全部的事件类型.
 
-![LibUV](/images/%E6%8E%A2%E7%B4%A2Node-js%E5%8E%9F%E7%90%86%EF%BC%9A%E4%B8%80/LibUV.png)
+![LibUV](/images/%E6%8E%A2%E7%B4%A2Node-js%E5%8E%9F%E7%90%86/LibUV.png)
 
 事件分发器在不同操作系统下有不同的底层实现方案, 如Linux下的epoll, BSD下的kqueue, Windows下的IOCP和Solaris下的event ports等. 网络I/O的非阻塞实现可由这些底层接口提供, 而Node.js需要做的则是封装不同平台的实现, 从而实现上文中的EventLoop机制, 进而最终的程序员能够以异步的方式进行网络编程.
 
@@ -79,7 +79,7 @@ set immediate2
 
 为了最终向编程人员创造一个非阻塞的开发平台, 首先需要为前文提及的各类事件封装一个跨平台的异步操作层, 在Node.js中, 这就是[LibUV](http://libuv.org/). 下面这幅图摘自官方文档, 其表述的也是上文所提的内容.
 
-![LibUV结构](/images/%E6%8E%A2%E7%B4%A2Node-js%E5%8E%9F%E7%90%86%EF%BC%9A%E4%B8%80/LibUV%E7%BB%93%E6%9E%84.png)
+![LibUV结构](/images/%E6%8E%A2%E7%B4%A2Node-js%E5%8E%9F%E7%90%86/LibUV%E7%BB%93%E6%9E%84.png)
 
 ## 事件队列
 
@@ -101,7 +101,7 @@ LibUV为实现EventLoop建立了4个队列, 分别是:
 
 那么这些队列如何协同工作实现最终的EventLoop呢? 先看一幅图:
 
-![EventLoop](/images/%E6%8E%A2%E7%B4%A2Node-js%E5%8E%9F%E7%90%86%EF%BC%9A%E4%B8%80/EventLoop.png)
+![EventLoop](/images/%E6%8E%A2%E7%B4%A2Node-js%E5%8E%9F%E7%90%86/EventLoop.png)
 
 如图所示，EventLoop从Timer & Interval队列开始, 顺序并循环遍历每个队列. 执行器轮询一个队列的过程被称作一个**阶段**(Phase). 当所有队列皆为空, 且没有其他未完成的后台任务时, 程序结束. 此外, **在任意两个阶段中间**, Node.js还会执行自身实现的两个"中间"队列中的全部回调, 即Node.js保证在执行LibUV的当前阶段后, 下一阶段前, 自身队列被清空.
 
@@ -162,11 +162,11 @@ setTimeout(() => {
 
 下图是Node.js的架构:
 
-![Node.js架构](/images/%E6%8E%A2%E7%B4%A2Node-js%E5%8E%9F%E7%90%86%EF%BC%9A%E4%B8%80/Node.js%E6%9E%B6%E6%9E%84.png)
+![Node.js架构](/images/%E6%8E%A2%E7%B4%A2Node-js%E5%8E%9F%E7%90%86/Node.js%E6%9E%B6%E6%9E%84.png)
 
 可以看到, LibUV处于较Node.js更低层, 而我们前文讨论的EventLoop, 是从Node.js的视角看的, 如果我们继续下探至LibUV, 会发现情况其实更加复杂, 如图所示:
 
-![LibUV队列](/images/%E6%8E%A2%E7%B4%A2Node-js%E5%8E%9F%E7%90%86%EF%BC%9A%E4%B8%80/LibUV%E9%98%9F%E5%88%97.jpg)
+![LibUV队列](/images/%E6%8E%A2%E7%B4%A2Node-js%E5%8E%9F%E7%90%86/LibUV%E9%98%9F%E5%88%97.jpg)
 
 
 
@@ -264,9 +264,17 @@ setTimeout(() => console.log('timeout3'));
 
 在Node.js发布版本11之前, 一切确实如前文所述, 但在Node.js 11之后, 这一行为却改变了:
 
-![Node14](/images/%E6%8E%A2%E7%B4%A2Node-js%E5%8E%9F%E7%90%86%EF%BC%9A%E4%B8%80/Node14.png)
+![Node14](/images/%E6%8E%A2%E7%B4%A2Node-js%E5%8E%9F%E7%90%86/Node14.png)
 
 在Node.js 11之后, 每次执行`setTimeout`, `setImmediate`之后, 都会检查Next Tick和Promise Microtasks两个队列, 如果非空, 则优先执行其中的回调. 这种行为的改变是为了使Node.js的行为与浏览器的行为保持一致.
+
+# Node.js多线程
+
+在Node.js诞生后的很长一段时间里, 他并没有官方的多线程支持, 这是因为Node.js是基于JavaScript的, 而JavaScript是单线程的. 此前, 如果我们一定要通过Node.js做一些CPU密集型任务, 通常会考虑通过`child_process`或`cluster`模块编写多进程代码. 但在v10.5.0版本中, Node.js引入了`worker_threads`模块以支持用户级多线程, 并在v12 LTS版本后标将其记为稳定模块.
+
+`worker_threads`模块是一种解决方案而非语言特性, 换句话说, 他并非为JavaScript本身语言添加了并发特性, 每个Worker是独立的V8实例, 拥有自己的EventLoop, 只是相较子进程的方案而言. 这些Worker可以共享内存.
+
+在我看来Node.js提供的这些用于并发编程的模块, 更多的是对自身功能的补足, 而非鼓励使用的特性, 在性能, 易用性等方面都没有明显的优势.
 
 # 总结
 

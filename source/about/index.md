@@ -5,7 +5,7 @@ thumbnail: "/images/关于.jpg"
 ---
 {% iframe "//music.163.com/outchain/player?type=2&id=27571001&auto=1&height=66" 330 86 %}
 # 关于
-单机游戏, 轻度ACG文化, 摄影剪辑, 人文历史学科爱好者. 程序猿, 目前在无锡工作, 编程源于兴趣.
+程序猿, 目前在无锡工作, 编程源于兴趣. 单机游戏, 轻度ACG文化, 摄影剪辑, 人文历史学科爱好者.
 
 [GitHub for an English Version](https://github.com/AngelMsger).
 
@@ -19,9 +19,10 @@ thumbnail: "/images/关于.jpg"
 
 - 2017/7 - 2017/10, [思必驰](http://www.aispeech.com/), 运维部门, 实习生.
   - 熟悉Kubernetes, 边缘服务的部署
-- 2018/7至今, [帆软软件](https://www.fanruan.com/), [简道云](https://www.jiandaoyun.com/)部门, 服务端开发工程师.
-  - 负责基础平台主要功能实现和维护
-  - 参与开放平台的设计, 负责开放平台的实现
+- 2018/7至今, [帆软软件](https://www.fanruan.com/), [简道云](https://www.jiandaoyun.com/)部门, 后开发工程师.
+  - 负责基础服务(门户/认证/个人信息维护/组织架构管理/第三方服务集成), 开放平台相关功能的实现和维护
+  - 参与内部框架的设计和实现
+  - 参与其他功能的实现
 
 ### 技能
 

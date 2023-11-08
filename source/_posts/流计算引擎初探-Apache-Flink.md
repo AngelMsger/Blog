@@ -7,7 +7,7 @@ tags:
 - Flink
 categories:
 - Big Data
-thumbnail: "/images/banner/流计算引擎初探 - Apache Flink.jpg"
+thumbnail: "/images/banner/流计算引擎初探-Apache-Flink.jpg"
 typora-root-url: ../../source/
 ---
 

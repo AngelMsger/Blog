@@ -7,7 +7,7 @@ tags:
 - Spark
 categories:
 - Big Data
-thumbnail: "/images/banner/Spark的流计算方案 - Sturctured Streaming.jpg"
+thumbnail: "/images/banner/Spark的流计算方案-Sturctured-Streaming.jpg"
 typora-root-url: ../../source/
 ---
 

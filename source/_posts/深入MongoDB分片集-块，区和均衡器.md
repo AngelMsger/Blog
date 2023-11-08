@@ -9,7 +9,7 @@ tags:
 - Optimization
 categories:
 - Database
-thumbnail: "/images/banner/深入MongoDB分片集 - 块，区和均衡器.jpg"
+thumbnail: "/images/banner/深入MongoDB分片集-块，区和均衡器.jpg"
 typora-root-url: ../../source/
 ---
 
